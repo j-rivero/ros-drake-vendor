@@ -1,0 +1,14 @@
+diff --git a/tools/bazel.rc b/tools/bazel.rc
+index 59aedf4..909aac4 100644
+--- a/tools/bazel.rc
++++ b/tools/bazel.rc
+@@ -1,6 +1,9 @@
+ # Don't use bzlmod yet.
+ common --enable_bzlmod=false
+ 
++# Limit the building threads to 1
++build --jobs=1
++
+ # Default to an optimized build.
+ build -c opt
+ 
