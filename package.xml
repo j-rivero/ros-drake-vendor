@@ -9,8 +9,25 @@
   <maintainer email="drake-users@mit.edu">Drake Users</maintainer>
   <license>BSD</license>
 
+ <!-- Missing in rosdistro
+   - libglx-dev (installed indirectly by qtbase5-dev)
+   - libmumps-seq-dev (installed indirectly by coinor-libipopt-dev)
+   - libjchart2d-java [CRITICAL]
+  -->
+
   <buildtool_depend>ament_cmake</buildtool_depend>
   <buildtool_depend>ament_cmake_vendor_package</buildtool_depend>
-
+  <buildtool_depend>git</buildtool_depend>
+  <buildtool_depend>eigen</buildtool_depend>
+  <buildtool_depend>java</buildtool_depend>
+  <buildtool_depend>pkg-config</buildtool_depend>
+  <buildtool_depend>clang</buildtool_depend>
+  <build_depend>coinor-libipopt-dev</build_depend>
+  <build_depend>libclang-dev</build_depend>
+  <build_depend>libglib-dev</build_depend>
+  <build_depend>liblapack-dev</build_depend>
   <build_depend>nasm</build_depend>
+  <build_depend>opengl</build_depend>
+  <build_depend>qtbase5-dev</build_depend>
+  <build_depend>gfortran</build_depend>
 </package>
