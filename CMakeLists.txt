@@ -16,7 +16,6 @@ ament_vendor(drake
     -DWITH_USER_SPDLOG:BOOL=ON
     -DDRAKE_IS_BUILDING_DOCUMENTATION:BOOL=OFF
   GLOBAL_HOOK
-  PATCHES patches
 )
 
 ament_package()
