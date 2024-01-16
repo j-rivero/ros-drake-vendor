@@ -1,0 +1,33 @@
+name: builder
+
+on:
+  push:
+
+jobs:
+  build_testing:
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Install missing rosdep keys
+        run: sudo apt-get install -y patchelf
+      - uses: ros-tooling/setup-ros@v0.7
+        with:
+          required-ros-distributions: rolling
+      - uses: ros-tooling/action-ros-ci@v0.3
+        with:
+          package-name: drake
+          target-ros2-distro: rolling
+          skip-tests: true
+          colcon-defaults: |
+            {
+              "build": {
+                "cmake-target": [
+                  "install"
+                ],
+                "cmake-args": [
+                  "-DCMAKE_PREFIX_PATH=/opt/ros/rolling",
+                  "-DAMENT_PREFIX_PATH=/opt/ros/rolling",
+                  "-DCMAKE_INSTALL_PREFIX=/opt/ros/rolling",
+                  "-DCMAKE_BUILD_TYPE=None"
+                ]
+              }
+            }
