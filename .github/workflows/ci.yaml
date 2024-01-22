@@ -29,3 +29,10 @@ jobs:
                 ]
               }
             }
+      - name: Build cmake example
+        run: |
+          . /opt/ros/rolling/setup.sh
+          git clone https://github.com/RobotLocomotion/drake-external-examples
+          cd drake-external-examples/drake_cmake_installed_apt
+          cmake --build build
+          ctest --test-dir build
