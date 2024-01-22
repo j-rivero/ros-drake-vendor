@@ -7,8 +7,6 @@ jobs:
   build_testing:
     runs-on: ubuntu-22.04
     steps:
-      - name: Install missing rosdep keys
-        run: sudo apt-get install -y patchelf
       - uses: ros-tooling/setup-ros@v0.7
         with:
           required-ros-distributions: rolling
