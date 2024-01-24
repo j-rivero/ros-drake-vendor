@@ -34,7 +34,7 @@ jobs:
           . /home/runner/work/ros-drake-vendor/ros-drake-vendor/ros_ws/install/setup.sh
           # Checkin if lcm-binaries are in path
           which lcm-spy || true
-          git clone https://github.com/RobotLocomotion/drake-external-examples
-          cd drake-external-examples/drake_cmake_installed_apt
+          git clone https://github.com/j-rivero/drake-shambhala.git
+          cd drake-shambhala/drake_ament_cmake_installed/src/drake_ament_cmake_installed
           cmake -B build
           ctest --test-dir build
