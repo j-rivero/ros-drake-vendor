@@ -12,7 +12,7 @@ jobs:
           required-ros-distributions: rolling
       - uses: ros-tooling/action-ros-ci@v0.3
         with:
-          package-name: drake
+          package-name: drake_vendor
           target-ros2-distro: rolling
           skip-tests: true
           colcon-defaults: |
@@ -32,6 +32,8 @@ jobs:
       - name: Build cmake example
         run: |
           . /opt/ros/rolling/setup.sh
+          # Checkin if lcm-binaries are in path
+          which lcm-spy || true
           git clone https://github.com/RobotLocomotion/drake-external-examples
           cd drake-external-examples/drake_cmake_installed_apt
           cmake -B build
