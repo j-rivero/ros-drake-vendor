@@ -1,1 +1,1 @@
-find_package(drake PATH /opt/drake
+find_package(drake PATH /opt/drake)
