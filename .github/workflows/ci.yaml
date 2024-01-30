@@ -12,7 +12,7 @@ jobs:
           required-ros-distributions: rolling
       - uses: ros-tooling/action-ros-ci@v0.3
         with:
-          package-name: drake_vendor
+          package-name: drake
           target-ros2-distro: rolling
           skip-tests: true
           colcon-defaults: |
