@@ -2,8 +2,8 @@
 Changelog for package drake_vendor
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+1.25.2 (2024-02-02)
+-------------------
 * Use patch to skip lsb_release. Testing proposes.
 * Contributors: Jose Luis Rivero
 
