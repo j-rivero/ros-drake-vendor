@@ -2,8 +2,8 @@
 Changelog for package drake_vendor
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+1.25.3 (2024-02-02)
+-------------------
 * Rework patches
 * Contributors: Jose Luis Rivero
 
