@@ -2,6 +2,12 @@
 Changelog for package drake_vendor
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Be explicit about patches
+* Add testing in github-actions
+* Contributors: Jose Luis Rivero
+
 1.25.3 (2024-02-02)
 -------------------
 * Rework patches
