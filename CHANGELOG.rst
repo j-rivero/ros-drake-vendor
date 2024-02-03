@@ -2,8 +2,8 @@
 Changelog for package drake_vendor
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+1.25.5 (2024-02-03)
+-------------------
 * Add workaround to get lsb-release into the system
   Remove previous patch
 * Contributors: Jose Luis Rivero
