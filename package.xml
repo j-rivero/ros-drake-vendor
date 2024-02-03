@@ -59,4 +59,6 @@
   <depend>spdlog</depend>
   <!-- FIXME: workaround for problems with vendoring package not install vcs -->
   <depend>python3-vcstool</depend>
+  <!-- FIXME: workaround for problems with vendoring package not install lsb-release -->
+  <depend>python3-distro</depend>
 </package>
