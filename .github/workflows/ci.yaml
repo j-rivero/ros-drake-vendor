@@ -10,31 +10,20 @@ jobs:
       - uses: ros-tooling/setup-ros@v0.7
         with:
           required-ros-distributions: rolling
+      - name: checkout
+        uses: actions/checkout@v4
+        with:
+          repository: RobotLocomotion/drake-external-examples
+          path: ros_ws/src
       - uses: ros-tooling/action-ros-ci@v0.3
         with:
-          package-name: drake
+          package-name: drake drake_cmake_installed drake_cmake_installed_apt drake_ament_cmake_installed
           target-ros2-distro: rolling
           skip-tests: true
           colcon-defaults: |
             {
               "build": {
-                "cmake-target": [
-                  "install"
-                ],
-                "cmake-args": [
-                  "-DCMAKE_PREFIX_PATH=/opt/ros/rolling",
-                  "-DAMENT_PREFIX_PATH=/opt/ros/rolling",
-                  "-DCMAKE_INSTALL_PREFIX=/opt/ros/rolling",
-                  "-DCMAKE_BUILD_TYPE=None"
-                ]
+                "merge-install": true,
+                "cmake-target": "install"
               }
             }
-      - name: Build cmake example
-        run: |
-          . /home/runner/work/ros-drake-vendor/ros-drake-vendor/ros_ws/install/setup.sh
-          # Checkin if lcm-binaries are in path
-          which lcm-spy || true
-          git clone https://github.com/j-rivero/drake-shambhala.git
-          cd drake-shambhala/drake_ament_cmake_installed/src/drake_ament_cmake_installed
-          cmake -B build
-          ctest --test-dir build
