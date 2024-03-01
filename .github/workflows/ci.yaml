@@ -35,4 +35,4 @@ jobs:
           . /opt/ros/rolling/setup.bash
           . install/setup.bash
           colcon graph
-          colcon build --packages-select drake_cmake_installed drake_cmake_installed_apt drake_ament_cmake_installed --event-handlers=console_direct+
+          colcon build --merge-install --packages-select drake_cmake_installed drake_cmake_installed_apt drake_ament_cmake_installed --event-handlers=console_direct+
