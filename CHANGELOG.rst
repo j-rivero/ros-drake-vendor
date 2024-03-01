@@ -2,8 +2,8 @@
 Changelog for package drake
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+1.26.2 (2024-03-01)
+-------------------
 * Define the right patch
 * Contributors: Jose Luis Rivero
 
