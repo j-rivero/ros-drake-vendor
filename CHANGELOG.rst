@@ -2,8 +2,8 @@
 Changelog for package drake
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+1.26.1 (2024-03-01)
+-------------------
 * Update drake to use plain drake name
 * 1.25.5
 * Update changelog
