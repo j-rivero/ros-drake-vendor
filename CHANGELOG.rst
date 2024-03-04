@@ -8,8 +8,8 @@ Changelog for package drake
 * Fix unset code
 * Contributors: Jose Luis Rivero
 
-Forthcoming
------------
+1.26.4 (2024-03-04)
+-------------------
 * Use GLOBAL_HOOK
 * 1.26.3
 * update changelog
